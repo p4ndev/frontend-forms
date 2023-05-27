@@ -1,0 +1,22 @@
+<button (click)='openForm()'>None</button>
+
+<br />
+Fields: 
+<button (click)='openForm(1)'>Simple field</button>
+<button (click)='openForm(2)'>Grouped fields</button>
+<button (click)='openForm(3)'>Grouped fields & event</button>
+
+<br />
+Manipulation:
+<button (click)='openForm(4)'>Single</button>
+<button (click)='openForm(5)'>Multiple</button>
+
+
+<div [ngSwitch]="formOption">
+  <app-simple-form-control          *ngSwitchCase="1" />
+  <app-grouped-form-fields          *ngSwitchCase="2" />
+  <app-grouped-form-fields-event    *ngSwitchCase="3" />
+  <app-single-form-manipulation     *ngSwitchCase="4" />
+  <app-multiple-form-manipulation   *ngSwitchCase="5" />
+  <p *ngSwitchDefault>Please <em>select</em> an option above</p>
+</div>

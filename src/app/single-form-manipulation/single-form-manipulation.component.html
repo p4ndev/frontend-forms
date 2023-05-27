@@ -1,0 +1,32 @@
+<h2>Single form manipulation</h2>
+
+<form [formGroup]="form">
+    
+    Name: <input formControlName="name" /><br/>
+    Email: <input formControlName="email" />
+
+    <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" formControlName="gender" [value]=null /> N/A
+        <input type="radio" formControlName="gender" [value]=1 /> Male
+        <input type="radio" formControlName="gender" [value]=2 /> Female
+    </fieldset><br />
+
+    <input type="checkbox" formControlName="optIn" /> I read the terms
+
+</form>
+
+<hr>
+
+<button (click)="addName()">Set Ana</button>
+<button (click)="addEmail()">Set email</button>
+<button (click)="addFemale()">Set female</button>
+<button (click)="toggleTerms()">Toggle terms</button>
+
+<hr>
+
+{{ form.value | json }}
+
+<hr>
+
+<em>{{ name.value }} - {{ email.value }}</em>

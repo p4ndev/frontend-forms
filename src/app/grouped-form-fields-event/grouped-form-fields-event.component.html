@@ -1,0 +1,24 @@
+<h2>Grouped - Form Fields & Events</h2>
+
+<form [formGroup]="groupEventForm" (ngSubmit)="onEmailSent()">
+
+    <label>Name:</label>
+    <input formControlName="name" />
+
+    <label>Email:</label>
+    <input formControlName="email" />
+
+    <input type="reset" value="Clear" />
+    <input type="submit" value="Send" />
+
+</form>
+
+<hr>
+
+<p>Name: {{ Name.value }}</p>
+<p>Email: {{ Email.value }}</p>
+
+<hr>
+
+<p>Name: {{ groupEventForm.get('name')?.value }}</p>
+<p>Email: {{ groupEventForm.get('email')?.value }}</p>

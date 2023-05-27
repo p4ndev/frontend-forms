@@ -1,0 +1,16 @@
+<h2>Grouped - Form Fields</h2>
+<form [formGroup]="groupForm">
+
+  <label>First name:</label>
+  <input formControlName="firstName" />
+
+  &nbsp;
+
+  <label>Last name:</label>
+  <input formControlName="lastName">
+
+</form>
+
+<hr>
+
+{{ groupForm.value | json }}

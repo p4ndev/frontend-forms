@@ -1,0 +1,28 @@
+<h2>Multiple form manipulation</h2>
+
+<form [formGroup]="form">
+
+    Name: <input formControlName="name" /><br />
+
+    Email: <input formControlName="email" /><br />
+
+    Subject: <select formControlName="subject">
+        <option [value]="subjectEnums.None">Select</option>
+        <option [value]="subjectEnums.Issue">Issue</option>
+        <option [value]="subjectEnums.Support">Support</option>
+        <option [value]="subjectEnums.Suggestion">Suggestion</option>
+    </select><br />
+
+    Content: <textarea rows="8" cols="80" formControlName="content"></textarea>
+
+</form>
+
+<hr>
+
+<button (click)="addIssue()">Add an issue example</button>
+<button (click)="addSuggestion()">Add a suggestion example</button>
+<button (click)="parseContent()">Parse the content</button>
+
+<hr>
+
+{{ form.value | json }}
