@@ -1,6 +1,6 @@
 # AngularReactiveForms
 
-[ x ] Field (simple + grouped)
-[ x ] Manipulation (single + multiple + validation)
-[ x ] Event (grouped + simple)
-[ x ] Advanced (builder + array)
+- Field (simple + grouped)
+- Manipulation (single + multiple + validation)
+- Event (grouped + simple)
+- Advanced (builder + array)
