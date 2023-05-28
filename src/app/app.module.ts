@@ -10,6 +10,8 @@ import { GroupedFormFieldsEventComponent      } from './grouped-form-fields-even
 import { MultipleFormManipulationComponent } from './multiple-form-manipulation/multiple-form-manipulation.component';
 import { ValidationComponent } from './validation/validation.component';
 import { ValidationReportComponent } from './validation-report/validation-report.component';
+import { SimpleBuilderFieldsComponent } from './simple-builder-fields/simple-builder-fields.component';
+import { SimpleArrayFieldsComponent } from './simple-array-fields/simple-array-fields.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ValidationReportComponent } from './validation-report/validation-report
     SingleFormManipulationComponent,
     MultipleFormManipulationComponent,
     ValidationComponent,
-    ValidationReportComponent
+    ValidationReportComponent,
+    SimpleBuilderFieldsComponent,
+    SimpleArrayFieldsComponent,
   ],
   imports: [
     BrowserModule,                            ReactiveFormsModule

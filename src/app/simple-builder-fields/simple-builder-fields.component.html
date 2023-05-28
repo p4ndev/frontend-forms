@@ -1,0 +1,11 @@
+<h2>Builder fields</h2>
+
+<form [formGroup]="signInForm">
+    
+    Username: <input formControlName="userName" /><br />
+    Password: <input formControlName="passWord" type="password" /><br />
+    
+    <input type="reset" value="Clear" />
+    <input type="submit" value="Log in" *ngIf="signInForm.status !== 'INVALID'" />
+
+</form>

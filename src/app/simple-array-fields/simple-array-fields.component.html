@@ -1,0 +1,26 @@
+<h2>Array fields</h2>
+
+<form [formGroup]="todoForm">
+
+    Task(s): 
+    <button (click)="addTask()">+</button>
+    <button (click)="removeTask()" *ngIf="tasks.length > 1">-</button>
+
+    <hr>
+
+    <fieldset formArrayName="tasks">
+        <label *ngFor="let task of tasks.controls; let i = index">
+            {{ i+1 }} # <input [formControlName]="i" />
+        </label>
+    </fieldset>
+
+    <hr>
+
+    <input type="reset" value="Clean" />
+    <input type="submit" value="Save" />
+
+</form>
+
+<hr>
+
+{{ todoForm.value | json }}

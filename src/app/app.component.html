@@ -12,6 +12,10 @@ Manipulation:
 <button (click)='openForm(5)'>Multiple</button>
 <button (click)='openForm(6)'>Validation</button>
 
+<br />
+Advanced:
+<button (click)='openForm(7)'>Builder fields</button>
+<button (click)='openForm(8)'>Array fields</button>
 
 <div [ngSwitch]="formOption">
   <app-simple-form-control          *ngSwitchCase="1" />
@@ -20,5 +24,7 @@ Manipulation:
   <app-single-form-manipulation     *ngSwitchCase="4" />
   <app-multiple-form-manipulation   *ngSwitchCase="5" />
   <app-validation                   *ngSwitchCase="6" />
+  <app-simple-builder-fields        *ngSwitchCase="7" />
+  <app-simple-array-fields          *ngSwitchCase="8" />
   <p *ngSwitchDefault>Please <em>select</em> an option above</p>
 </div>
