@@ -11,6 +11,7 @@ import { GroupedFormFieldsComponent           } from './grouped-form-fields/grou
 import { SimpleBuilderFieldsComponent         } from './simple-builder-fields/simple-builder-fields.component';
 import { SingleFormManipulationComponent      } from './single-form-manipulation/single-form-manipulation.component';
 import { GroupedFormFieldsEventComponent      } from './grouped-form-fields-event/grouped-form-fields-event.component';
+import { FormFieldEventBehaviorsComponent     } from './form-field-event-behaviors/form-field-event-behaviors.component';
 import { MultipleFormManipulationComponent    } from './multiple-form-manipulation/multiple-form-manipulation.component';
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MultipleFormManipulationComponent    } from './multiple-form-manipulati
     GroupedFormFieldsComponent,               GroupedFormFieldsEventComponent,
     SingleFormManipulationComponent,          MultipleFormManipulationComponent,
     ValidationComponent,                      ValidationReportComponent,
-    SimpleBuilderFieldsComponent,             SimpleArrayFieldsComponent
+    SimpleBuilderFieldsComponent,             SimpleArrayFieldsComponent,
+    FormFieldEventBehaviorsComponent
   ],
   imports: [
     BrowserModule,                            ReactiveFormsModule

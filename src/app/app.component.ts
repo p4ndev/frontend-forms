@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-  formOption? : number = 8;
+  formOption? : number = 9;
   
   openForm(option? : number) : void{
     this.formOption = option;

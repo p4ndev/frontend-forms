@@ -1,0 +1,11 @@
+<h2>Form field - Events</h2>
+
+<form [formGroup]="eventForm">
+
+    <input formControlName="name" placeholder="name" />
+    <input formControlName="email" placeholder="e-mail" />
+
+    <input type="reset" value="Clean" />
+    <input type="submit" value="Send" *ngIf="form.valid" />
+
+</form>

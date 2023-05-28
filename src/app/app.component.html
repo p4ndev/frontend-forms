@@ -4,13 +4,17 @@
 Fields: 
 <button (click)='openForm(1)'>Simple field</button>
 <button (click)='openForm(2)'>Grouped fields</button>
-<button (click)='openForm(3)'>Grouped fields & event</button>
 
 <br />
 Manipulation:
 <button (click)='openForm(4)'>Single</button>
 <button (click)='openForm(5)'>Multiple</button>
 <button (click)='openForm(6)'>Validation</button>
+
+<br />
+Events:
+<button (click)='openForm(3)'>Grouped fields & event</button>
+<button (click)='openForm(9)'>Form field events</button>
 
 <br />
 Advanced:
@@ -26,5 +30,6 @@ Advanced:
   <app-validation                   *ngSwitchCase="6" />
   <app-simple-builder-fields        *ngSwitchCase="7" />
   <app-simple-array-fields          *ngSwitchCase="8" />
+  <app-form-field-event-behaviors   *ngSwitchCase="9" />
   <p *ngSwitchDefault>Please <em>select</em> an option above</p>
 </div>
