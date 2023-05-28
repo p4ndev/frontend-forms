@@ -1,0 +1,101 @@
+<h2>Validation</h2>
+
+<form [formGroup]="form">
+    
+    <app-validation-report header="FormGroup">
+        <td>{{ form.status }}</td>
+        
+        <td>{{ form.pristine }}</td>
+        <td>{{ form.dirty }}</td>
+    
+        <td>{{ form.untouched }}</td>
+        <td>{{ form.touched }}</td>
+    </app-validation-report>
+    <em>{{ form.errors | json }}</em>
+
+    <hr>
+
+    <label>Name: <input type="text" formControlName="name" /></label>
+
+    <app-validation-report header="FormGroup > Name">
+        <td>{{ form.controls.name.status }}</td>
+        
+        <td>{{ form.controls.name.pristine }}</td>
+        <td>{{ form.controls.name.dirty }}</td>
+    
+        <td>{{ form.controls.name.untouched }}</td>
+        <td>{{ form.controls.name.touched }}</td>
+    
+        <td>{{ form.controls.name.invalid }}</td>
+        <td>{{ form.controls.name.valid }}</td>
+    </app-validation-report>
+    <em>{{ form.controls.name.errors | json }}</em>
+
+    <hr>
+
+    <label>Age: <input type="number" formControlName="age" /></label>
+    <app-validation-report header="FormGroup > Age">
+        <td>{{ form.controls.age.status }}</td>
+        
+        <td>{{ form.controls.age.pristine }}</td>
+        <td>{{ form.controls.age.dirty }}</td>
+    
+        <td>{{ form.controls.age.untouched }}</td>
+        <td>{{ form.controls.age.touched }}</td>
+    
+        <td>{{ form.controls.age.invalid }}</td>
+        <td>{{ form.controls.age.valid }}</td>
+    </app-validation-report>
+    <em>{{ form.controls.age.errors | json }}</em>
+
+    <hr>
+
+    <label>Email: <input type="email" formControlName="email" /></label>
+    <app-validation-report header="FormGroup > Email">
+        <td>{{ form.controls.email.status }}</td>
+        
+        <td>{{ form.controls.email.pristine }}</td>
+        <td>{{ form.controls.email.dirty }}</td>
+    
+        <td>{{ form.controls.email.untouched }}</td>
+        <td>{{ form.controls.email.touched }}</td>
+    
+        <td>{{ form.controls.email.invalid }}</td>
+        <td>{{ form.controls.email.valid }}</td>
+    </app-validation-report>
+    <em>{{ form.controls.email.errors | json }}</em>
+
+    <hr>
+
+    <input type="reset" value="Clean" />
+    <input type="submit" value="Send" />
+</form>
+
+<hr>
+
+<em>{{ form.value | json }}</em>
+
+<hr>
+
+<table width="50%" [border]="1" style="text-align: center;">
+    <tr>
+        <th></th>
+        <th style="background-color: rgb(255, 92, 92)">NO</th>
+        <th style="background-color: rgb(0, 211, 0)">YES</th>
+    </tr>
+    <tr>
+        <th>Interaction</th>
+        <td>.ng-pristine</td>
+        <td>.ng-dirty</td>
+    </tr>
+    <tr>
+        <th>Mouse/touch</th>
+        <td>.ng-untouched</td>
+        <td>.ng-touched</td>
+    </tr>
+    <tr>
+        <th>Validity</th>
+        <td>.ng-invalid</td>
+        <td>.ng-valid</td>
+    </tr>
+</table>

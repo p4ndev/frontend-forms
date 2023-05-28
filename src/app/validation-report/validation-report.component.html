@@ -1,0 +1,18 @@
+<h3>{{ header }}</h3>
+<table width="80%" [border]="1" style="text-align: center;">
+    <tr>
+        <th>Title</th>
+        
+        <th style="background-color: #e0e0e0">Pristine</th>
+        <th style="background-color: #e0e0e0">Dirty</th>
+
+        <th style="background-color: #b8b8b8">Untouched</th>
+        <th style="background-color: #b8b8b8">Touched</th>
+
+        <th style="background-color: #949494">Invalid</th>
+        <th style="background-color: #949494">Valid</th>
+    </tr>
+    <tr>
+        <ng-content />
+    </tr>
+</table>

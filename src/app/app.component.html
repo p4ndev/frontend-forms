@@ -10,6 +10,7 @@ Fields:
 Manipulation:
 <button (click)='openForm(4)'>Single</button>
 <button (click)='openForm(5)'>Multiple</button>
+<button (click)='openForm(6)'>Validation</button>
 
 
 <div [ngSwitch]="formOption">
@@ -18,5 +19,6 @@ Manipulation:
   <app-grouped-form-fields-event    *ngSwitchCase="3" />
   <app-single-form-manipulation     *ngSwitchCase="4" />
   <app-multiple-form-manipulation   *ngSwitchCase="5" />
+  <app-validation                   *ngSwitchCase="6" />
   <p *ngSwitchDefault>Please <em>select</em> an option above</p>
 </div>
