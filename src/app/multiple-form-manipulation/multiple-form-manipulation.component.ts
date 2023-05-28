@@ -4,9 +4,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-multiple-form-manipulation',
-  templateUrl: './multiple-form-manipulation.component.html',
-  styles: [
-  ]
+  templateUrl: './multiple-form-manipulation.component.html'
 })
 export class MultipleFormManipulationComponent extends MultipleFormManipulationForm {
 
