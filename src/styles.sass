@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+form
+    width: 400px
+    text-align: center
+
+    label        
+        display: block
+        text-align: right
+        margin-bottom: 10px
+    
+    input
+        width: 270px
+        padding: 6px
+        border: 1px solid #333
+
+        &.ng-touched.ng-invalid
+            border-color: red
+
+        &.ng-touched.ng-valid
+            border-color: green
+    
+    button
+        margin-right: 2px
+        margin-left: 2px
+        padding: 4px

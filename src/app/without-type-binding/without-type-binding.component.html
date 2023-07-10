@@ -1,0 +1,16 @@
+<h2>{{ title }}</h2>
+
+<form
+  #templateDrivenForm="ngForm"
+  (ngSubmit)="services.onOuterSubmit(templateDrivenForm.value)">
+  
+    <label for="firstName">First name: <input type="text" name="firstName" ngModel required /></label>
+    
+    <label for="email">Email: <input type="email" name="email" ngModel required /></label>
+    
+    <label for="password">Password: <input type="password" name="password" ngModel required /></label>
+
+    <button type="reset">Clear</button> 
+    <button type="submit" [disabled]="!templateDrivenForm.valid">Submit</button>
+
+</form>
