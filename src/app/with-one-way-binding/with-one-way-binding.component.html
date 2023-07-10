@@ -1,1 +1,21 @@
 <h2>{{ title }}</h2>
+
+<form
+    #templateDrivenForm="ngForm"
+    (ngSubmit)="services.onInnerSubmit()">
+
+        <label for="firstName">First name: <input type="text" name="firstName" [(ngModel)]="model.firstName" required /></label>
+
+        <label for="email">Email: <input type="email" name="email" [(ngModel)]="model.email" required /></label>
+
+        <label for="password">Password: <input type="password" name="password" [(ngModel)]="model.password" required /></label>
+
+        <button type="reset">Clear</button> 
+        <button type="submit" [disabled]="!templateDrivenForm.valid">Submit</button>
+
+</form>
+
+<h2>Debug</h2>
+<code>
+    {{ model | json }}
+</code>
