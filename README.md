@@ -2,4 +2,4 @@
 
 Angular Reactive: **done**
 
-Angular Template Driven: **wip**
+Angular Template Driven: **done**
