@@ -1,0 +1,12 @@
+form{
+    width: 300px;
+    text-align: right;
+}
+
+label{
+    display: block;
+    padding: 5px 0;
+}
+label.error{
+    color: red;
+}
