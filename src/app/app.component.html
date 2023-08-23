@@ -1,0 +1,18 @@
+<h1>Register</h1>
+
+<form>
+    <label>Email:    <input type="email"    #usr /></label>
+    <label>Phone:    <input type="tel"      #tel /></label>
+    <label>Password: <input type="password" #pwd /></label>
+    <div>
+        <input type="reset" value="Clean" />
+        <input type="button" value="Sign up" (click)="onSubmitForm()" />
+    </div>
+</form>
+
+<dl *ngIf="formDto">
+    <dt>Fields</dt>
+        <dd>Email: {{ formDto.username }}</dd>
+        <dd>Phone: {{ formDto.phone }}</dd>
+        <dd>Password: {{ formDto.password }}</dd>
+</dl>
