@@ -1,11 +1,9 @@
-# Forms
+# Frontend Forms
 
-Angular Reactive: **done**
+Projects are available on specific branches (Angular and React only).
 
-Angular Template Driven: **done**
-
-Angular Native Element: **done**
-
-React Formik: **done**
-
-React Hook Forms: **done**
+- Angular Reactive
+- Angular Template Driven
+- Angular Native Element
+- React Formik
+- React Hook Forms
